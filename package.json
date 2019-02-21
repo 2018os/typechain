@@ -6,7 +6,12 @@
   "author": "2018os <tmdduq4536@naver.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "prestart": "tsc"
+    "start": "tsc -watch && node dist/index.js"
+  },
+  "devDependencies": {
+    "tsc-watch": "^1.1.39"
+  },
+  "dependencies": {
+    "crypto-js": "^3.1.9-1"
   }
 }
